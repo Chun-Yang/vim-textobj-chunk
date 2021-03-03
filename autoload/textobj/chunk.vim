@@ -43,7 +43,7 @@ function! s:select(chunk)
     " end of the line, +1 is used to delete the line break at the end
     let end_pos      = final_region[1]
     let end_pos[2]   = strlen(getline(end_pos[1])) + 1
-    return ['v', start_pos, end_pos]
+    return ['V', start_pos, end_pos]
 endfunction
 
 " check the end of the current line, see if it is one of the brackets
